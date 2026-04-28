@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyNai Shop</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        :root{
+            --utama:#fdec01;
+            --putih:#ffffff;
+            --hitam:#111111;
+            --abu:#666666;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#fffef5;
+            color:var(--hitam);
+        }
+
+        header{
+            background:var(--utama);
+            padding:20px;
+            text-align:center;
+        }
+
+        header h1{
+            margin-bottom:10px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:black;
+            margin:0 10px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            text-decoration:underline;
+        }
+
+        #hero{
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        #hero img{
+            width:350px;
+            max-width:100%;
+            border-radius:15px;
+            margin-top:20px;
+        }
+
+        .btn{
+            margin-top:20px;
+            padding:12px 25px;
+            border:none;
+            border-radius:8px;
+            background:var(--utama);
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            opacity:0.8;
+        }
+
+        section h2{
+            text-align:center;
+            margin:30px 0 20px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            padding:20px;
+        }
+
+        .card{
+            width:220px;
+            background:white;
+            border-radius:12px;
+            padding:15px;
+            text-align:center;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .card h3{
+            margin:10px 0 8px;
+        }
+
+        .harga{
+            color:#e67e22;
+            font-weight:bold;
+            margin-bottom:5px;
+        }
+
+        .kategori{
+            color:var(--abu);
+            font-size:14px;
+            margin-bottom:10px;
+        }
+
+        .btn-card{
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:8px;
+            background:var(--utama);
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        .btn-card:hover{
+            background:#e6d500;
+        }
+
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        @media(max-width:600px){
+            .card{
+                width:90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BeautyNai Shop</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Produk</a>
+        <a href="#">Kategori</a>
+        <a href="#">Keranjang</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="hero">
+        <h2>Semua Kebutuhan Aksesorismu Ada Disini!</h2>
+
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop" alt="Banner">
+
+        <br>
+
+        <button class="btn">Belanja Sekarang</button>
+    </section>
+
+    <section>
+        <h2>Produk Favorit</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?q=80&w=800&auto=format&fit=crop" alt="Mug">
+
+                <h3>Mug Nailong</h3>
+
+                <p class="harga">Rp 70.000</p>
+
+                <p class="kategori">Kategori: Size Mini</p>
+
+                <button class="btn-card">Tambah</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop" alt="Kipas Angin">
+
+                <h3>Kipas Angin Nailong</h3>
+
+                <p class="harga">Rp 220.000</p>
+
+                <p class="kategori">⭐ Favorit</p>
+
+                <button class="btn-card">Tambah</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop" alt="Gantungan Kunci">
+
+                <h3>Gantungan Kunci Nailong</h3>
+
+                <p class="harga">
+                    <del>Rp 110.000</del> Rp 49.000
+                </p>
+
+                <p class="kategori">🔥 Diskon</p>
+
+                <button class="btn-card">Tambah</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="Boneka">
+
+                <h3>Boneka Nailong</h3>
+
+                <p class="harga">Rp 300.000</p>
+
+                <p class="kategori">Kategori: Medium Size</p>
+
+                <button class="btn-card">Tambah</button>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Kontak: nailongholic.id@email.com</p>
+    <p>&copy; 2026 nailongholic.id</p>
+</footer>
+
+</body>
+</html>
